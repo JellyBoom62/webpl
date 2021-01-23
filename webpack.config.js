@@ -8,9 +8,6 @@ const TerserWebpackPlugin = require('terser-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
-const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
-
 const optimization = () => {
 	const config = {
 		splitChunks: {
